@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pig Latin Translator</title>
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <section id="center">
+    <div class="title">
+        <h1>Pig Latin Translator</h1>
+    </div>
+    <div class="form">
+      <form action="{% url 'translate' %}">
+        <input type="text" name="originaltext" required/><br><br>
+        <input id="button" type="submit" value="Translate" />
+      </form>
+    </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pig Latin Translator</title>
+  <link href="{% static 'css/app.css' %}" rel="stylesheet">
+</head>
+  <body>
+      <section id="center">
+    <div class="title">
+        <h1>Pig Latin Translator</h1>
+    </div>
+    <div class="content">
+
+      <h3>Original:</h3>
+      <p>{{ original }}</p>
+      <h3>Translation</h3>
+      <p>{{ translation }}<p>
+
+<br>
+<br>
+      <a href="{% url 'home' %}">New Translation</a>
+
+    </div>
+  </section>
+  </body>
+</html>
